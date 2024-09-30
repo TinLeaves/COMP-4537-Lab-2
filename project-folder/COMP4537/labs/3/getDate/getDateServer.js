@@ -6,8 +6,8 @@
 
 const http = require('http');
 const url = require('url');
-const utils = require('../modules/utils.js');
-const message = require('../lang/en/en.js');
+const utils = require('./modules/utils.js');
+const message = require('./lang/en/en.js');
 
 class GetDateServer {
     constructor(port) {
