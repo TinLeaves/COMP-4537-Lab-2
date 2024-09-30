@@ -1,7 +1,7 @@
 const http = require('http');
 const url = require('url');
-const utils = require('./modules/utils');
-const message = require('./lang/en/en');
+const utils = require('../modules/utils');
+const message = require('../lang/en/en.js');
 
 const server = http.createServer((req, res) => {
 
@@ -17,7 +17,7 @@ const server = http.createServer((req, res) => {
         res.end(greetingMsg);
     } else {
         res.writeHead(400, { 'Content-Type': 'text/plain' });
-        res.end(`${message.error}`);
+        res.end(`${message.getDateError}`);
     }
 });
 
