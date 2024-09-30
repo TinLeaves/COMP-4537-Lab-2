@@ -7,7 +7,7 @@
 const http = require('http');
 const url = require('url');
 const fs = require('fs');
-const message = require('../lang/en/en.js');
+const message = require('../getDate/lang/en/en.js');
 
 class ReadServer {
     constructor(port) {
