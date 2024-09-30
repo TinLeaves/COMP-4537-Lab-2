@@ -17,7 +17,7 @@ const server = http.createServer((req, res) => {
         res.end(greetingMsg);
     } else {
         res.writeHead(400, { 'Content-Type': 'text/plain' });
-        res.end('/?name=yourname is required (e.g. /?name=John)');
+        res.end(`${message.error}`);
     }
 });
 
